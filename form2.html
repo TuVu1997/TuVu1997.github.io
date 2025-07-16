@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PTN Form</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* light blue */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #e6f0ff; /* very light blue */
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello</h1>
-     <h2>Here is form 2 for you to try</h2>
+  <div class="form-container">
+    <h2>PTN Form T2 to try another form page</h2>
+    <form>
+      <label for="ptnNumber">PTN Number</label>
+      <input type="number" id="ptnNumber" name="ptnNumber" required />
 
-  
-</f24-form>
+      <label for="ptnText">PTN Text</label>
+      <input type="text" id="ptnText" name="ptnText" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
