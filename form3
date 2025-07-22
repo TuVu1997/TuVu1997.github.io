@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PTN Form</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* light blue */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .form-container {
+      background-color: #e6f0ff; /* very light blue */
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+  </style>
+  <!-- Force24 Tracking -->
+<script>
+    (function (f, o, r, c, e, _2, _4) {
+        f.Force24Object = e, f[e] = f[e] || function () {
+            f[e].q = f[e].q || [], f[e].q.push(arguments)
+        }, f[e].l = 1 * new Date, _2 = o.createElement(r),
+        _4 = o.getElementsByTagName(r)[0], _2.async = !0, _2.src = c, _4.parentNode.insertBefore(_2, _4)
+    })(window, document, "script", "https://static.websites.data-crypt.com/scripts/activity/v3/inject-v3.min.js", "f24");
+
+    f24('config', 'set_tracking_id', '3bc973cc-7fce-4163-90c2-8eba80e1a6a3');
+    f24('config', 'set_client_id', '6af0d14f-f8b4-4a09-a86c-d40798a73cab');
+</script>
+<!-- End Force24 Tracking -->
+</head>
+<body>
+  <div class="form-container">
+    <h2>This is a new page for test form 3</h2>
+    <form>
+      <label for="ptnText">PTN email</label>
+      <input type="text" id="email" name="email" required />
+
+      <label for="ptnNumber">PTN Number</label>
+      <input type="number" id="ptnNumber" name="ptnNumber" required />
+
+      <label for="ptnText">PTN Text 1</label>
+      <input type="text" id="ptnText1" name="ptnText1" required />
+      
+      <label for="ptnText">PTN Text 2</label>
+      <input type="text" id="ptnText2" name="ptnText2" required />
+
+      <!-- New -->
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
