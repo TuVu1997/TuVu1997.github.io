@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>External Form</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* light blue */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .form-container {
+      background-color: #e6f0ff; /* very light blue */
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+  </style>
+</head>
+<body>
+<!-- Add container and form code at here -->
+  <div class="form-container">
+    <h1>Here is External Form page</h1>
+    <form>
+      <!-- WhatsApp Status options -->
+      <label for="WA-Status">Choose a status:</label>
+      <select id="WA-Status" name="WA-Status" required>
+          <option value="">--Select--</option>
+          <option value="Active">Active</option>
+          <option value="Unsubscribed">Unsubscribed</option>
+          <option value="Bounce">Bounce</option>
+      </select>
+      
+<!-- Add container and form code at here -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html> 
