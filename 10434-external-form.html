@@ -69,15 +69,26 @@
       <label for="fname">First Name:</label>
       <input type="text" id="fname" name="fname" required />
       
-      <!-- WhatsApp Status options -->
-      <label for="WA-Status">Choose a status:</label>
-      <select id="WA-Status" name="WA-Status" required>
-          <option value="">--Select--</option>
-          <option value="Active">Active</option>
-          <option value="Unsubscribed">Unsubscribed</option>
-          <option value="Bounce">Bounce</option>
-      </select>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required />
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required />
       
+      <!-- WhatsApp Status options -->
+          <legend>Receive sale-off news on:</legend>
+            <input type="checkbox" name="WA" id="WA" value="Active">
+                  <label for="WhatsApp">WhatsApp</label>
+            <br>
+      
+            <input type="checkbox" name="Email" id="Email" value="Active">
+                  <label for="Email">Email</label>
+            <br>
+      
+            <input type="checkbox" name="SMS" id="SMS" value="Active">
+                  <label for="SMS">SMS</label>
+            <br>
+            
 <!-- Add container and form code at here -->
       <button type="submit">Submit</button>
     </form>
