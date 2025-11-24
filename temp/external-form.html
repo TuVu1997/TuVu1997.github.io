@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PTN Form</title>
+  <title>External Form</title>
   <style>
     body {
       background-color: #f0f8ff; /* light blue */
@@ -64,16 +64,16 @@
 <body>
 <!-- Add container and form code at here -->
   <div class="form-container">
-    <h2>PTN Form T2 to try another form page</h2>
+    <h1>Here is External Form page</h1>
     <form>
-      <label for="ptnNumber">PTN Number</label>
-      <input type="number" id="ptnNumber" name="ptnNumber" required />
-
-      <label for="ptnText">PTN Text 1</label>
-      <input type="text" id="ptnText1" name="ptnText1" required />
+      <!-- WhatsApp Status options -->
+      <label for="WA-Status">Choose a status:</label>
+      <select id="WA-Status" name="WA-Status" required>
+          <option value="">--Select--</option>
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+      </select>
       
-      <label for="ptnText">PTN Text 2</label>
-      <input type="text" id="ptnText2" name="ptnText2" required />
 <!-- Add container and form code at here -->
       <button type="submit">Submit</button>
     </form>
